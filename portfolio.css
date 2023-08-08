@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;  /* view port heigth */
+    background-color: white;
+    position: relative;
+}
+.navbar{
+    display: flex; /* to display side by side */
+    margin-left: 100px;
+    text-align: center;
+    width: 85%;
+    padding: 2%;
+    justify-content: space-between;/* to moving to oppo side */
+
+}
+
+.logo{
+    width: 130px;
+}
+
+.linkitems{
+    display: inline-block; /* to display content like a  horizontal row */
+    margin: 10px 10px;  /* top-bottom:10px and right and left:10px */
+}
+
+.links{
+    text-decoration: none; /* to remove underline of a word or para */
+    font-weight: bold;
+    color: rgb(241, 12, 12);
+}
+
+/* pseudo class */
+
+/* selector: pseudo(property: value;) */
+
+.links:hover{
+    color: black;  /* color will be changed when the cursor point on the text */
+    font-size: 20px;
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+
+.title-h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+}
+
+#women{
+    color: yellow;
+}
+
+.download{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+
+.images{
+    position: absolute;
+
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 50px;
+}
+
+.images img{   /* decentanted selector */
+    position: absolute;
+    height: 100%;
+    left: 70%;
+    bottom: 0px;
+
+    transform: translateX(-70%); /* to remove scroll so we havt to put value as we put it on left */
+transition: bottom 1s, left 2s;
+}
+
+.images:hover #shape{
+    bottom: 70px;
+
+}
+.images:hover #gurl{
+    left: 40%;
+}
+
+#About{
+    margin: 1% 8% 0px 8%;
+}
+
+.heading{
+    text-align: center;
+    
+}
+
+.heading h2{
+    font-size: 30px;
+    margin-top: 40px;
+
+}
+
+.heading span{
+    color: red;
+    font-size: 20px;
+    
+}
+
+.about-content{
+    display:grid;  /* to made like a grid */
+    grid-template-columns: repeat(2,1fr);  /* fr=frames (another unit) */
+    gap: 2rem ;  /* 1rem=16px  (gap=its a gap b/w to divs) */
+margin-top: 20px;
+}
+
+.about img{
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.about-deatils{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.information{
+    margin-top: 1rem;
+}
+
+.info-box{
+    margin-bottom: 1rem;
+}
+
+.info-box span{
+    margin-left: 1rem;
+}
+
+#my{
+    color: green;
+}
+
+   
+
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+#gr{
+    color: green;
+}
+
+.skill-img img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+    margin-bottom: 1rem;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+background-color: black;
+border-radius: 10px;
+position: absolute;
+left: 1px;
+bottom: 0px;
+}
+
+.htmlbar{
+    width: 95%;
+    background-color: yellow;
+
+}   
+
+.java-bar{
+    width: 90%;
+    background-color: yellow;
+}
+
+.react-bar{
+    width: 85%;
+    background-color: yellow;
+}
+
+.sql-bar{
+    width: 93%;
+    background-color: yellow;
+}
+
+.heading{
+    text-align: center;
+    margin-top: -30px;
+}
+
+.icon-set{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+margin-top: 2%;
+}
+
+
+.icon{
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px;
+    color: black;
+       
+}
+
+.icon i{
+    font-size: 30px;
+color: black;
+}
+
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow,red );
+}
+
+.icon:hover i{
+    color: white;
+    animation: shake 0.50s;
+}
+
+@keyframes shake{
+
+10%{
+    transform: rotate(15deg);
+}
+
+20%{
+    transform: rotate(-15deg);
+}
+
+30%{
+    transform: rotate(15deg);
+}
+40%{
+    transform: rotate(-15deg);
+}
+
+}
+
+footer p{
+margin-top: 30px;}
+
+.arrow{
+    float: right;
+
+    background-image: linear-gradient(to bottom right,yellow,red);
+    margin: 0px 10px 50px 0px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow:hover i{
+    color: white;
+}
